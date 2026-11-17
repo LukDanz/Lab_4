@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $.getJSON("books.json", function(data) {
+            console.log(data.books[0].title);
+            console.log(data.books[1].author);
+            console.log(data.books[0].genres, data.books[1].genres);
+        });
+    </script>
+</body>
+</html>
